@@ -18,12 +18,7 @@ jobs:
         git config --global user.name Shamoi
         git config --global user.email darkskall@hotmail.com
         latest=$(curl -s https://api.github.com/repos/TeamWin/android_bootable_recovery/commits/android-11 | grep '"sha":' | cut -d '"' -f 4 | head -n1)
-        touch latest_commit
-
-          git add latest_commit
-          git commit -m "Update latest commit hash"
-          git push
-        fi
+        
     - name: Cleanup
       uses: rokibhasansagar/slimhub_actions@main
     - name: Build
