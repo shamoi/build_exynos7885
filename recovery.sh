@@ -13,8 +13,8 @@ dev_list="a10 a20 a20e a30 a30s a40"
 cd ~
 mkdir recovery; cd recovery
 git config --global color.ui true
-git config --global user.name Gabriel2392
-git config --global user.email gabriel824m@gmail.com
+git config --global user.name Shamoi
+git config --global user.email darkskall@hotmail.com
 repo init --depth=1 -u https://github.com/minimal-manifest-twrp/platform_manifest_twrp_aosp.git -b twrp-11
 repo sync --force-sync -j$(($(nproc --all) + 1)) &>/dev/null || repo sync --force-sync -j$(($(nproc --all) + 1)) &>/dev/null
 rm -rf .repo
