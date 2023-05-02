@@ -3,7 +3,7 @@ name: Build recovery
 
 on:
 
-workflow_dispatch:
+
 
 jobs:
   recovery:
